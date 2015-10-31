@@ -15,6 +15,7 @@ public class PluginConfig extends xConfig {
 	public final String version;
 	public final String message;
 	public final List<Integer> numbers;
+	public final String tickThis;
 
 
 
@@ -27,6 +28,7 @@ public class PluginConfig extends xConfig {
 				PluginDefines.DEFAULT_MESSAGE
 		);
 		this.numbers = this.loadNumbers();
+		this.tickThis = this.getString(PluginDefines.CONFIG_TICKTHIS);
 	}
 	private List<Integer> loadNumbers() throws xConfigException {
 		final List<Integer> numbers = this.getList(
@@ -46,6 +48,9 @@ public class PluginConfig extends xConfig {
 	}
 	public List<Integer> getNumbers() {
 		return this.numbers;
+	}
+	public String getTickThis() {
+		return this.tickThis;
 	}
 
 

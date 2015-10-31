@@ -5,6 +5,8 @@ import com.growcontrol.plugins.exampleplugin.PluginDefines;
 import com.growcontrol.plugins.exampleplugin.server.configs.PluginConfig;
 import com.poixson.commonapp.config.xConfig;
 import com.poixson.commonapp.config.xConfigException;
+import com.poixson.commonjava.Utils.utils;
+import com.poixson.commonjava.scheduler.ticker.xTickHandler;
 import com.poixson.commonjava.xLogger.xLog;
 
 
@@ -35,13 +37,23 @@ public class ExamplePlugin extends apiServerPlugin {
 			return;
 		}
 		// do something useful
-		System.out.println();
-		System.out.println("Message from config file: "+this.config.getMessage());
-		System.out.println("And some numbers..");
-		for(final Integer i : this.config.getNumbers()) {
-			System.out.println(i);
+		{
+			System.out.println();
+			System.out.println("Message from config file: "+this.config.getMessage());
+			System.out.println("And some numbers..");
+			for(final Integer i : this.config.getNumbers()) {
+				System.out.println(i);
+			}
+			System.out.println();
 		}
-		System.out.println();
+		// blink something
+		if(utils.notEmpty(this.config.getTickThis())) {
+			final TickExample tickExample = new TickExample(
+					this.config.getTickThis()
+			);
+			xTickHandler.get()
+				.register(tickExample);
+		}
 	}
 
 

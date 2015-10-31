@@ -17,6 +17,7 @@ public final class PluginDefines {
 	// config keys
 	public static final String CONFIG_MESSAGE = "Message";
 	public static final String CONFIG_NUMBERS = "Numbers";
+	public static final String CONFIG_TICKTHIS = "Tick This";
 
 
 }
