@@ -12,10 +12,10 @@ import com.poixson.commonapp.config.xConfigException;
 
 public class PluginConfig extends xConfig {
 
-	public final String version;
-	public final String message;
-	public final List<Integer> numbers;
-	public final String tickThis;
+	private final String version;
+	private final String message;
+	private final List<Integer> numbers;
+	private final String tickThis;
 
 
 
