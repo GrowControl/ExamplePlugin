@@ -30,7 +30,7 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-		<pxncommon-version>${project.version}</pxncommon-version>
+		<pxnCommon-version>${project.version}</pxnCommon-version>
 		<gcServer-version>${project.version}</gcServer-version>
 		<gcClient-version>${project.version}</gcClient-version>
 
@@ -138,8 +138,8 @@
 
 		<dependency>
 			<groupId>com.poixson</groupId>
-			<artifactId>pxncommon</artifactId>
-			<version>${pxncommon-version}</version>
+			<artifactId>common</artifactId>
+			<version>${pxnCommon-version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
