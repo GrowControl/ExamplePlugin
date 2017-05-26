@@ -1,7 +1,7 @@
 {
 	"Name": "ExamplePlugin",
 	"ArtifactId": "exampleplugin",
-	"GroupId": "com.growcontrol",
+	"GroupId": "com.growcontrol.plugins",
 	"Version": "3.6.1",
 	"URL": "http://growcontrol.com",
 	"Github-Path": "GrowControl/ExamplePlugin",

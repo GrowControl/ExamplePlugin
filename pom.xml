@@ -1,4 +1,4 @@
-<!-- Generated on: May 26, 2017 17:42 UTC -->
+<!-- Generated on: May 26, 2017 18:18 UTC -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<name>ExamplePlugin</name>
 	<artifactId>exampleplugin</artifactId>
-	<groupId>com.growcontrol</groupId>
+	<groupId>com.growcontrol.plugins</groupId>
 	<version>3.6.1</version>
 	<packaging>jar</packaging>
 	<url>http://growcontrol.com</url>
