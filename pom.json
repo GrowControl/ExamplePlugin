@@ -1,0 +1,30 @@
+{
+	"Name": "ExamplePlugin",
+	"ArtifactId": "exampleplugin",
+	"GroupId": "com.growcontrol",
+	"Version": "3.6.1",
+	"URL": "http://growcontrol.com",
+	"Github-Path": "GrowControl/ExamplePlugin",
+	"Org-Name": "GrowControl",
+	"Deps": {
+		"pxncommon": {
+			"GroupId": "com.poixson",
+			"ArtifactId": "pxncommon",
+			"Name": "pxnCommon",
+			"Version": "${project.version}",
+			"Scope": "provided"
+		},
+		"gcServer": {
+			"GroupId": "com.growcontrol",
+			"ArtifactId": "server",
+			"Version": "${project.version}",
+			"Scope": "provided"
+		},
+		"gcClient": {
+			"GroupId": "com.growcontrol",
+			"ArtifactId": "client",
+			"Version": "${project.version}",
+			"Scope": "provided"
+		}
+	}
+}
