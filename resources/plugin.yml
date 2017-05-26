@@ -1,7 +1,8 @@
 Plugin Name: ExamplePlugin
 Plugin Version: 3.6.1
-Server Main: com.growcontrol.plugins.exampleplugin.server.ExamplePlugin.class
-Client Main: com.growcontrol.plugins.exampleplugin.client.ExamplePlugin.class
+Main Class:
+  - com.growcontrol.plugins.exampleplugin.server.ExamplePluginServer.class
+  - com.growcontrol.plugins.exampleplugin.client.ExamplePluginClient.class
 Author: lorenzop
 Website: http://growcontrol.com/
 Depend: []
