@@ -1,21 +1,31 @@
 package com.growcontrol.plugins.exampleplugin.server;
 
-import com.growcontrol.api.serverapi.plugins.apiServerPlugin;
-import com.growcontrol.plugins.exampleplugin.PluginDefines;
-import com.growcontrol.plugins.exampleplugin.server.configs.PluginConfig;
-import com.poixson.commonapp.config.xConfig;
-import com.poixson.commonapp.config.xConfigException;
-import com.poixson.commonjava.Utils.utils;
-import com.poixson.commonjava.scheduler.ticker.xTickHandler;
-import com.poixson.commonjava.xLogger.xLog;
+import com.growcontrol.server.plugins.gcServerPlugin;
+import com.poixson.app.plugin.xPluginManager;
+import com.poixson.app.plugin.xPluginYML;
 
 
-public class ExamplePlugin extends apiServerPlugin {
-	public static final String LOG_NAME = "ExamplePlugin";
+public class ExamplePluginServer extends gcServerPlugin {
 
+
+
+	public ExamplePluginServer(final xPluginManager<?> manager, final xPluginYML yml) {
+		super(manager, yml);
+	}
+
+
+
+	@Override
+	protected void onEnable() {
+	}
+	@Override
+	protected void onDisable() {
+	}
+
+
+
+/*
 	private volatile PluginConfig config = null;
-
-
 
 	@Override
 	protected void onEnable() {
@@ -55,25 +65,7 @@ public class ExamplePlugin extends apiServerPlugin {
 				.register(tickExample);
 		}
 	}
-
-
-
-	@Override
-	protected void onDisable() {
-	}
-
-
-
-	// logger
-	private static volatile xLog _log = null;
-	public static xLog getLogger() {
-		if(_log == null)
-			_log = xLog.getRoot(LOG_NAME);
-		return _log;
-	}
-	public static xLog getLogger(final String name) {
-		return getLogger().get(name);
-	}
+*/
 
 
 
