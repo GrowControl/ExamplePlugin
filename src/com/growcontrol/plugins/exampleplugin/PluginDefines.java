@@ -1,10 +1,12 @@
 package com.growcontrol.plugins.exampleplugin;
 
+import com.poixson.utils.Keeper;
 import com.poixson.commonjava.Utils.utilsDirFile;
 
 
 public final class PluginDefines {
 	private PluginDefines() {}
+	{ Keeper.add(new PluginDefines()); }
 
 
 	// defaults
