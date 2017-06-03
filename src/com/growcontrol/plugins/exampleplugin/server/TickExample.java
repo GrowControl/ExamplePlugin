@@ -1,3 +1,4 @@
+/*
 package com.growcontrol.plugins.exampleplugin.server;
 
 import com.growcontrol.common.meta.MetaRouter;
@@ -43,3 +44,4 @@ public class TickExample implements xTickListener {
 
 
 }
+*/

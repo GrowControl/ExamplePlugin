@@ -1,3 +1,4 @@
+/*
 package com.growcontrol.plugins.exampleplugin.server.configs;
 
 import java.util.Collections;
@@ -56,3 +57,4 @@ public class PluginConfig extends xConfig {
 
 
 }
+*/
