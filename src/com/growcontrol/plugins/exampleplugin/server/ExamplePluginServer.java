@@ -1,17 +1,9 @@
 package com.growcontrol.plugins.exampleplugin.server;
 
 import com.growcontrol.server.plugins.gcServerPlugin;
-import com.poixson.app.plugin.xPluginManager;
-import com.poixson.app.plugin.xPluginYML;
 
 
 public class ExamplePluginServer extends gcServerPlugin {
-
-
-
-	public ExamplePluginServer(final xPluginManager<?> manager, final xPluginYML yml) {
-		super(manager, yml);
-	}
 
 
 
