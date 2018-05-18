@@ -2,7 +2,7 @@
 	"Name": "ExamplePlugin",
 	"ArtifactId": "exampleplugin",
 	"GroupId": "com.growcontrol.plugins",
-	"Version": "3.6.1",
+	"Version": "3.6.2",
 	"URL": "http://growcontrol.com",
 	"Github-Path": "GrowControl/ExamplePlugin",
 	"Org-Name": "GrowControl",
@@ -11,6 +11,20 @@
 			"GroupId": "com.poixson",
 			"ArtifactId": "common",
 			"Name": "pxnCommon",
+			"Version": "${project.version}",
+			"Scope": "provided"
+		},
+		"pxnCommon-Config": {
+			"GroupId": "com.poixson",
+			"ArtifactId": "common-config",
+			"Name": "pxnCommon-Config",
+			"Version": "${project.version}",
+			"Scope": "provided"
+		},
+		"pxnCommon-Scheduler": {
+			"GroupId": "com.poixson",
+			"ArtifactId": "common-sched",
+			"Name": "pxnCommon-Scheduler",
 			"Version": "${project.version}",
 			"Scope": "provided"
 		},
@@ -27,6 +41,18 @@
 			"Name": "gcClient",
 			"Version": "${project.version}",
 			"Scope": "provided"
+		},
+		"Quartz": {
+			"GroupId": "org.quartz-scheduler",
+			"ArtifactId": "quartz",
+			"Name": "Quartz",
+			"Version": "2.3.0"
+		},
+		"snakeyaml": {
+			"GroupId": "org.yaml",
+			"ArtifactId": "snakeyaml",
+			"Name": "SnakeYAML",
+			"Version": "1.21"
 		}
 	}
 }

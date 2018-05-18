@@ -1,4 +1,4 @@
-<!-- Generated on: May 28, 2017 11:22 UTC -->
+<!-- Generated on: May 18, 2018 18:16 UTC -->
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
@@ -7,9 +7,10 @@
 	<name>ExamplePlugin</name>
 	<artifactId>exampleplugin</artifactId>
 	<groupId>com.growcontrol.plugins</groupId>
-	<version>3.6.1</version>
+	<version>3.6.2</version>
 	<packaging>jar</packaging>
 	<url>http://growcontrol.com</url>
+
 	<scm>
 		<url>https://github.com/GrowControl/ExamplePlugin</url>
 		<connection>scm:git:https://github.com/GrowControl/ExamplePlugin.git</connection>
@@ -19,26 +20,34 @@
 		<url>ci.poixson.com</url>
 		<system>pxnci</system>
 	</ciManagement>
-	<organization>
-		<name>GrowControl</name>
-		<url>http://growcontrol.com</url>
-	</organization>
 	<issueManagement>
 		<url>https://github.com/GrowControl/ExamplePlugin/issues</url>
 		<system>github</system>
 	</issueManagement>
+
+	<organization>
+		<name>GrowControl</name>
+		<url>http://growcontrol.com</url>
+	</organization>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<pxnCommon-version>${project.version}</pxnCommon-version>
+		<pxnCommon-Config-version>${project.version}</pxnCommon-Config-version>
+		<pxnCommon-Scheduler-version>${project.version}</pxnCommon-Scheduler-version>
 		<gcServer-version>${project.version}</gcServer-version>
 		<gcClient-version>${project.version}</gcClient-version>
+		<Quartz-version>2.3.0</Quartz-version>
+		<snakeyaml-version>1.21</snakeyaml-version>
 
 		<git-commit-id-plugin-version>2.2.2</git-commit-id-plugin-version>
+
 		<maven-resources-plugin-version>3.0.2</maven-resources-plugin-version>
 		<maven-compiler-plugin-version>3.3</maven-compiler-plugin-version>
 		<maven-jar-plugin-version>2.6</maven-jar-plugin-version>
+
 		<maven-source-plugin-version>2.4</maven-source-plugin-version>
+
 		<maven-eclipse-plugin-version>2.10</maven-eclipse-plugin-version>
 
 		<junit-version>4.12</junit-version>
@@ -63,6 +72,7 @@
 			</testResource>
 		</testResources>
 		<plugins>
+
 			<plugin>
 				<groupId>pl.project13.maven</groupId>
 				<artifactId>git-commit-id-plugin</artifactId>
@@ -80,6 +90,7 @@
 					<dotGitDirectory>${project.basedir}/.git</dotGitDirectory>
 				</configuration>
 			</plugin>
+
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-resources-plugin</artifactId>
@@ -87,6 +98,8 @@
 				<configuration>
 					<nonFilteredFileExtensions>
 						<nonFilteredFileExtension>png</nonFilteredFileExtension>
+						<nonFilteredFileExtension>so</nonFilteredFileExtension>
+						<nonFilteredFileExtension>dll</nonFilteredFileExtension>
 					</nonFilteredFileExtensions>
 				</configuration>
 			</plugin>
@@ -143,12 +156,24 @@
 			</plugin>
 		</plugins>
 	</build>
-	<dependencies>
 
+	<dependencies>
 		<dependency>
 			<groupId>com.poixson</groupId>
 			<artifactId>common</artifactId>
 			<version>${pxnCommon-version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.poixson</groupId>
+			<artifactId>common-config</artifactId>
+			<version>${pxnCommon-Config-version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.poixson</groupId>
+			<artifactId>common-sched</artifactId>
+			<version>${pxnCommon-Scheduler-version}</version>
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
@@ -162,6 +187,16 @@
 			<artifactId>client</artifactId>
 			<version>${gcClient-version}</version>
 			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.quartz-scheduler</groupId>
+			<artifactId>quartz</artifactId>
+			<version>${Quartz-version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>${snakeyaml-version}</version>
 		</dependency>
 
 	</dependencies>
