@@ -15,6 +15,13 @@
 			"Version": "${pxnVersion}",
 			"Scope": "provided"
 		},
+		"pxnCommon-Plugin": {
+			"GroupId": "com.poixson",
+			"ArtifactId": "common-plugin",
+			"Name": "pxnCommon-Plugin",
+			"Version": "${pxnVersion}",
+			"Scope": "provided"
+		},
 		"pxnCommon-Config": {
 			"GroupId": "com.poixson",
 			"ArtifactId": "common-config",
