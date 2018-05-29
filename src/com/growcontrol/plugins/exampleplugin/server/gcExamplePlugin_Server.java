@@ -3,7 +3,7 @@ package com.growcontrol.plugins.exampleplugin.server;
 import com.growcontrol.server.plugins.gcServerPlugin;
 
 
-public class ExamplePluginServer extends gcServerPlugin {
+public class gcExamplePlugin_Server extends gcServerPlugin {
 
 
 

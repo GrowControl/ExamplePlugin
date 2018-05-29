@@ -3,7 +3,7 @@ package com.growcontrol.plugins.exampleplugin.client;
 import com.growcontrol.client.plugins.gcClientPlugin;
 
 
-public class ExamplePluginClient extends gcClientPlugin {
+public class gcExamplePlugin_Client extends gcClientPlugin {
 
 
 
